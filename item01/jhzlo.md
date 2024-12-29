@@ -445,14 +445,14 @@ public class Main {
 ### ❗JDBC 사례
 
 | **제공부**                         | **서비스부**                       |
-|------------------------------------|-----------------------------------|
-| **서비스 제공자 인터페이스**       | **서비스 인터페이스**             |
-| *(service provider interface)*     | *(service interface)*             |
-| `Driver`                           | `Connection`                      |
-|                                    |                                   |
-| **제공자 등록 API**                | **서비스 접근 API**               |
-| *(provider registration API)*      | *(service access API)*            |
-| `DriverManager.registerDriver()`   | `DriverManager.getConnection()`   |
+|---------------------------------|-----------------------------------|
+| **서비스 제공자 인터페이스**               | **서비스 인터페이스**             |
+| *(service provider interface)*  | *(service interface)*             |
+| `Driver`                        | `Connection`                      |
+|                                 |                                   |
+| **제공자 등록 API**                  | **서비스 접근 API**               |
+| *(provider registration API)*   | *(service access API)*            |
+| `DriverManager.registerDriver()` | `DriverManager.getConnection()`   |
 
 JDBC의 경우, DriverManager.registerDriver()가 프로바이더 등록 API. 
 
