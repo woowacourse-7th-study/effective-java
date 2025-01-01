@@ -30,7 +30,7 @@
 
 그렇기 때문에 사용자가 클래스를 상속 목적으로 설계했는지 오해하는 경우가 발생할 수 있다.
 
-```
+```java
 // 부모 클래스 (abstract)
 public abstract class AbstractUtilityClass {
     // 인스턴스화를 막기 위한 시도
@@ -48,7 +48,7 @@ public class SubUtilityClass extends AbstractUtilityClass {
 }
 ```
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         // 자식 클래스의 인스턴스 생성
@@ -65,7 +65,7 @@ public class Main {
 
 이는 클래스 내부에서 인스턴스를 생성하는 행위를 방지할 수 있게 해준다.
 
-```
+```java
 public class UtilityClass {
     // 인스턴스화를 방지하기 위해 기본 생성자를 private 으로 생성
     private UtilityClass() {
